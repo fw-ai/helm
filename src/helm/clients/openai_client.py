@@ -237,7 +237,8 @@ class OpenAIClient(CachingClient):
             "n": request.num_completions,
             "max_tokens": request.max_tokens,
             # "best_of" request.top_k_per_token,
-            "logprobs": request.top_k_per_token,
+            "logprobs": 1,
+            # request.top_k_per_token,
             "stop": request.stop_sequences or None,  # API doesn't like empty list
             "top_p": request.top_p,
             "presence_penalty": request.presence_penalty,
@@ -248,7 +249,7 @@ class OpenAIClient(CachingClient):
         # OpenAI doesn't let you ask for more completions than the number of
         # per-token candidates.
         # raw_request["best_of"] = max(raw_request["best_of"], raw_request["n"])
-        raw_request["logprobs"] = max(raw_request["logprobs"], raw_request["n"])
+        # raw_request["logprobs"] = max(raw_request["logprobs"], raw_request["n"])
 
         return raw_request
 
