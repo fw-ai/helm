@@ -2367,7 +2367,7 @@ model_deployments:
   - name: fireworks/llama3-405fp16
     model_name: fireworks/llama3-405fp16
     tokenizer_name: meta/llama-3.1-8b
-    max_sequence_length: 4096
+    max_sequence_length: 8192
     client_spec:
       class_name: "helm.clients.openai_client.OpenAIClient"
       args:
@@ -2377,7 +2377,7 @@ model_deployments:
   - name: fireworks/llama3-405fp8
     model_name: fireworks/llama3-405fp8
     tokenizer_name: meta/llama-3.1-8b
-    max_sequence_length: 4096
+    max_sequence_length: 8192
     client_spec:
       class_name: "helm.clients.openai_client.OpenAIClient"
       args:
@@ -2387,7 +2387,7 @@ model_deployments:
   - name: fireworks/llama3-405fp82
     model_name: fireworks/llama3-405fp82
     tokenizer_name: meta/llama-3.1-8b
-    max_sequence_length: 4096
+    max_sequence_length: 8192
     client_spec:
       class_name: "helm.clients.openai_client.OpenAIClient"
       args:
@@ -2407,7 +2407,7 @@ model_deployments:
   - name: fireworks/llama3-405fp8-kv
     model_name: fireworks/llama3-405fp8-kv
     tokenizer_name: meta/llama-3.1-8b
-    max_sequence_length: 4096
+    max_sequence_length: 8192
     client_spec:
       class_name: "helm.clients.openai_client.OpenAIClient"
       args:
