@@ -2413,3 +2413,13 @@ model_deployments:
       args:
         base_url: "http://0.0.0.0:80/v1/"
         model_name: "accounts/models/models/meta-llama-v3p1-405b-instruct-fp8-405b-kv-had"
+
+  - name: vllm/llama3-405fp8
+    model_name: vllm/llama3-405fp8
+    tokenizer_name: meta/llama-3.1-8b
+    max_sequence_length: 8192
+    client_spec:
+      class_name: "helm.clients.openai_client.OpenAIClient"
+      args:
+        base_url: "http://0.0.0.0:8000/v1/"
+        model_name: "meta-llama/Meta-Llama-3.1-405B-Instruct-FP8"
