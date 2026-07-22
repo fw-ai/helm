@@ -211,7 +211,7 @@ protobuf==3.19.6
 psutil==6.0.0
 pyarrow==16.1.0
 pyarrow-hotfix==0.6
-pyasn1==0.6.0
+pyasn1==0.6.4
 pyasn1_modules==0.4.0
 pycares==4.4.0
 pycocoevalcap==1.2
